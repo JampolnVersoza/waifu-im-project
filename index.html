@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waifu.im API Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🎀 WAIFU.IM IMAGE GALLERY</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <select id="tagSelect">
+        <option value="waifu">Waifu</option>
+        <option value="maid">Maid</option>
+        <option value="uniform">Uniform</option>
+        <option value="selfies">Selfies</option>
+      </select>
+
+      <button id="loadBtn">Load Images</button>
+    </section>
+
+    <div id="loading" class="hidden">Loading images...</div>
+    <div id="error" class="hidden"></div>
+
+    <section id="results" class="grid"></section>
+  </main>
+
+  <footer>
+    <p>API Source: <a href="https://waifu.im" target="_blank">https://waifu.im</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
